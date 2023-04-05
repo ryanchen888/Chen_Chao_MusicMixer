@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Mixer</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <h1>Music Mixer</h1>
+  </header>
+  <main>
+    <div  class="grid" id="title">
+      <h2>Put the heroes in their very own music box!</h2>
+    </div>
+    <div class="left">
+      <div class="draggable" id="drag1">
+        <img src="images/iron man.png" alt="Iron Man">
+      </div>
+      <div class="draggable" id="drag2">
+        <img src="images/thor.png" alt="Thor">
+      </div>
+      <div class="draggable" id="drag3">
+        <img src="images/star lord.png" alt="Starlord">
+      </div>
+      <div class="draggable" id="drag4">
+        <img src="images/dead pool.png" alt="Deadpool">
+      </div>
+    </div>
+    <div class="right">
+      <div class="droppable" id="drop1">
+        <audio src="audio/Immigrant Song.mp3" data-trackref="Immigrant Song"></audio>
+      </div>
+      <div class="droppable" id="drop2">
+        <audio src="audio/Come And Get Your Love.mp3" data-trackref="Come And Get Your Love"></audio>
+      </div>
+      <div class="droppable" id="drop3">
+        <audio src="audio/Shoop.mp4" data-trackref="Shoop"></audio>
+      </div>
+      <div class="droppable" id="drop4">
+        <audio src="audio/Back In Black.mp3" data-trackref="Back In Black"></audio>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <button id="play-pause">Play</button>
+    <button id="reset">Reset</button>
+    <h2>Enjoy the music! See what happens!</h2>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
